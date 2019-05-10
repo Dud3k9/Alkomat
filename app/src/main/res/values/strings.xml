@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Alkomat</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_app">Alkomat</string>
+    <string name="start">pomiar</string>
+    <string name="alkomat">Alkomat</string>
+    <string name="title_activity_app1">Alkomat</string>
+    <string name="m_czyzna_kobieta">Mężczyzna/Kobieta</string>
+    <string name="waga">masa ciała w kg</string>
+    <string name="me_czyzna">Meżczyzna</string>
+    <string name="kobieta">Kobieta</string>
+    <string name="ilosc_alkoholu_w_ml">ilosc alkoholu w ml</string>
+    <string name="alkoholu">% alkoholu</string>
+    <string name="ilosc_porcji">ilosc porcji</string>
+    <string name="oblicz">oblicz</string>
+    <string name="_000">000‰</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_app2">app2</string>
+</resources>
