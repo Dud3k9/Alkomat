@@ -9,6 +9,21 @@
     tools:showIn="@layout/activity_main">
 
     <Button
+        android:id="@+id/startb2"
+        android:layout_width="143dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="166dp"
+        android:onClick="click"
+        android:text="zapisane"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startb" />
+
+    <Button
         android:id="@+id/startb"
         android:layout_width="143dp"
         android:layout_height="83dp"
@@ -20,10 +35,9 @@
         android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
