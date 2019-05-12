@@ -84,7 +84,7 @@ public class app2 extends AppCompatActivity {
 
         Alkomat alkomat=new Alkomat();
 
-        wynik=""+(alkomat.policzP(procent,ml,ilosc,plec,masa))+"‰o";
+        wynik=""+(alkomat.policzP(procent,ml,ilosc,plec,masa))+"‰";
         promil.setText(wynik);
     }
 

@@ -50,4 +50,10 @@ public class MainActivity extends AppCompatActivity {
         intent =new Intent(MainActivity.this,app2.class);
         startActivity(intent);
     }
+
+    public void clicksave(View view) {
+        Intent intent;
+        intent= new Intent(MainActivity.this,Zapisane.class);
+        startActivity(intent);
+    }
 }
