@@ -105,9 +105,8 @@ public class app2 extends AppCompatActivity {
 
     public void createFile() {
         File file=new File(path+"/data.txt");
-        if(!file.exists()){
             try {
-                FileOutputStream fos= new FileOutputStream(file);
+                FileOutputStream fos= new FileOutputStream(file,true);
                 OutputStreamWriter writer=new OutputStreamWriter(fos);
                 writer.append(wynik);
                 writer.close();
@@ -119,4 +118,4 @@ public class app2 extends AppCompatActivity {
             }
         }
     }
-}
+
