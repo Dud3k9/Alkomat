@@ -1,4 +1,4 @@
-package com.example.kdhrt.alkomat01;
+package com.Dudek9.kdhrt.alkomat01;
 
 import org.junit.Test;
 

@@ -1,7 +1,6 @@
-package com.example.kdhrt.alkomat01;
+package com.Dudek9.kdhrt.alkomat01;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

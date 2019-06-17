@@ -1,4 +1,4 @@
-package com.example.kdhrt.alkomat01;
+package com.Dudek9.kdhrt.alkomat01;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.kdhrt.alkomat01", appContext.getPackageName());
+        assertEquals("com.Dudek9.kdhrt.alkomat01", appContext.getPackageName());
     }
 }

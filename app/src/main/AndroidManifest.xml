@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kdhrt.alkomat01">
+    package="com.Dudek9.kdhrt.alkomat01">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -12,15 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Zapisane"
+            android:name="com.Dudek9.kdhrt.alkomat01.Zapisane"
             android:label="@string/title_activity_zapisane"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.Dudek9.kdhrt.alkomat01.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.kdhrt.alkomat01.MainActivity" />
+                android:value="com.Dudek9.kdhrt.alkomat01.MainActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.Dudek9.kdhrt.alkomat01.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,13 +32,13 @@
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".app2"
+            android:name="com.Dudek9.kdhrt.alkomat01.app2"
             android:label="@string/title_activity_app2"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.Dudek9.kdhrt.alkomat01.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.kdhrt.alkomat01.MainActivity" />
+                android:value="com.Dudek9.kdhrt.alkomat01.MainActivity" />
         </activity>
     </application>
 
