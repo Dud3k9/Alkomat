@@ -9,91 +9,119 @@
     tools:showIn="@layout/activity_app2">
 
 
-    <LinearLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/mezczyzna"
+            <RadioGroup
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/mezczyzna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/me_czyzna" />
+
+                <RadioButton
+                    android:id="@+id/kobieta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/kobieta" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/waga"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/me_czyzna" />
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/waga"
+                android:inputType="number|numberSigned|numberDecimal"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="74dp" />
 
-            <RadioButton
-                android:id="@+id/kobieta"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/ml"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/kobieta" />
-        </RadioGroup>
+                android:ems="10"
+                android:hint="ilosc alkoholu w ml"
+                android:inputType="number|numberSigned|numberDecimal" />
 
-        <EditText
-            android:id="@+id/waga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/waga"
-            android:inputType="number|numberSigned|numberDecimal"
-            tools:layout_editor_absoluteX="10dp"
-            tools:layout_editor_absoluteY="74dp" />
+            <EditText
+                android:id="@+id/procent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="% alkoholu"
+                android:inputType="number|numberSigned|numberDecimal" />
 
-        <EditText
-            android:id="@+id/ml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="ilosc alkoholu w ml"
-            android:inputType="number|numberSigned|numberDecimal" />
+            <EditText
+                android:id="@+id/ilosc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ilosc porcji"
+                android:inputType="number|numberSigned|numberDecimal" />
 
-        <EditText
-            android:id="@+id/procent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="% alkoholu"
-            android:inputType="number|numberSigned|numberDecimal" />
+            <Button
+                android:id="@+id/oblicz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="oblicz"
+                android:text="oblicz" />
 
-        <EditText
-            android:id="@+id/ilosc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="ilosc porcji"
-            android:inputType="number|numberSigned|numberDecimal" />
+            <TextView
+                android:id="@+id/promil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="000‰"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/oblicz"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="oblicz"
-            android:text="oblicz" />
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="add"
+                android:text="dodaj" />
 
-        <TextView
-            android:id="@+id/promil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="000‰"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_red_light"
-            android:textSize="30sp" />
+            <TextView
+                android:id="@+id/promil2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="suma:"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="zapisz"
-            android:text="Zapisz" />
+            <TextView
+                android:id="@+id/promil1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="000‰"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="30sp" />
 
-    </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
 </android.support.constraint.ConstraintLayout>

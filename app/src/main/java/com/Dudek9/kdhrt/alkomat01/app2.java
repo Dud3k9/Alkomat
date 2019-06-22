@@ -21,7 +21,10 @@ import java.io.OutputStreamWriter;
 public class app2 extends AppCompatActivity {
 
     String wynik;
+    double wynikD;
+    double suma=0;
     String path= "sdcard/Android/data/Alkomat";
+    TextView promil1;
     private final int MEMORY_ACESS=5;
 
     @Override
@@ -34,6 +37,7 @@ public class app2 extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         RadioButton m = findViewById(R.id.mezczyzna);
+        promil1=findViewById(R.id.promil1);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));
         }
@@ -79,9 +83,11 @@ public class app2 extends AppCompatActivity {
 
         Alkomat alkomat=new Alkomat();
 
+        wynikD=alkomat.policzP(procent,ml,ilosc,plec,masa);
         wynik=""+(alkomat.policzP(procent,ml,ilosc,plec,masa))+"‰";
         promil.setText(wynik);
     }
+
 
     public void zapisz(View view) {
         if(wynik!=null) {
@@ -112,5 +118,10 @@ public class app2 extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+
+    public void add(View view) {
+        suma+=wynikD;
+        promil1.setText(""+suma+"‰");
     }
+}
 
