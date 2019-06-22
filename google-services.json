@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "375976776890",
+    "firebase_url": "https://alkomat-a91f2.firebaseio.com",
+    "project_id": "alkomat-a91f2",
+    "storage_bucket": "alkomat-a91f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375976776890:android:1cdfa5c54332e174",
+        "android_client_info": {
+          "package_name": "com.Dudek.kdhrt.alkomat01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375976776890-87c2v3e1t9742u43qfrj5p0i00fgqul8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3ehyIL88e1czRrPzuiSnipXq7ynxHHvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375976776890-87c2v3e1t9742u43qfrj5p0i00fgqul8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

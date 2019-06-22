@@ -9,21 +9,6 @@
     tools:showIn="@layout/activity_main">
 
     <Button
-        android:id="@+id/startb2"
-        android:layout_width="143dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="166dp"
-        android:onClick="clicksave"
-        android:text="zapisane"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startb" />
-
-    <Button
         android:id="@+id/startb"
         android:layout_width="143dp"
         android:layout_height="83dp"
@@ -35,21 +20,23 @@
         android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="189dp"
-        android:layout_height="286dp"
+        android:layout_width="201dp"
+        android:layout_height="270dp"
         android:layout_marginStart="86dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="85dp"
-        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/startb"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/web_hi_res_512" />
 
 </android.support.constraint.ConstraintLayout>
