@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             adView.setAdSize(AdSize.BANNER);
             adView.setAdUnitId("ca-app-pub-1448095865400513/7507006730");
 
-            adView = findViewById(R.id.adView);
+            adView = findViewById(R.id.adView2);
             AdRequest adRequest = new AdRequest.Builder().build();
             adView.loadAd(adRequest);
 
