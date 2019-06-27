@@ -19,6 +19,11 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
@@ -37,6 +42,7 @@ public class app2 extends AppCompatActivity {
     private final int MEMORY_ACESS=5;
     LocalTime localTime = null;
     NotificationCompat.Builder notification;
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +70,17 @@ public class app2 extends AppCompatActivity {
 
         promil1.setText(""+load()+"‰");
         suma=load();
+
+
+        MobileAds.initialize(this, "ca-app-pub-1448095865400513~1707885149");
+
+        adView = new AdView(this);
+        adView.setAdSize(AdSize.BANNER);
+        adView.setAdUnitId("ca-app-pub-1448095865400513/4191891332");
+
+        adView = findViewById(R.id.adView2);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
     }
 

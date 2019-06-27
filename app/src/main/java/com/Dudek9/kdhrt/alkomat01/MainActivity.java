@@ -8,7 +8,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class MainActivity extends AppCompatActivity {
+
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +23,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));
+
+
+
+            MobileAds.initialize(this, "ca-app-pub-1448095865400513~1707885149");
+
+            adView = new AdView(this);
+            adView.setAdSize(AdSize.BANNER);
+            adView.setAdUnitId("ca-app-pub-1448095865400513/7507006730");
+
+            adView = findViewById(R.id.adView);
+            AdRequest adRequest = new AdRequest.Builder().build();
+            adView.loadAd(adRequest);
+
         }
+
 
 
     }
